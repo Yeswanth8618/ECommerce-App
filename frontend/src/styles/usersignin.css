@@ -1,0 +1,46 @@
+.usersignin form{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    border-radius: 10px;
+    font-family: cursive;
+    box-shadow: 0px 0px 10px grey;
+    padding: 15px 50px;
+    height: 75vh;
+    background-color: white;
+    box-shadow: 0px 10px 10px 10px rgba(189, 238, 238, 0.808);
+}
+.all2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.back2{
+    background-image: url(../images/land2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.usersignin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  width: 50%;
+  background-color: whitesmoke;
+    
+}
+.usersignin input,label{
+    margin: 10px 0px;
+}
+.usersignin input{
+    outline: none;
+}
+#btn{
+    margin-left:90px;
+    margin-top: 10px;
+    background-color: rgba(0, 255, 255, 0.699);
+}
+.gen{
+    display: flex;
+}
+

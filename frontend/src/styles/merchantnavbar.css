@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(187, 247, 247);
+    height: 8vh;
+}
+.logo{
+    padding-left: 10px;
+}
+.account{
+    padding-right: 15px;
+}
+.option a{
+    text-decoration: none;
+    color: rgb(13, 9, 243);
+    font-size: medium;
+    font-weight: bolder;
+    font-style: oblique;
+    margin-right: 750px;
+}
+.option a:hover{
+    border-bottom: 2px solid black;
+}
