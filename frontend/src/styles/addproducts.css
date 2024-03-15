@@ -1,0 +1,11 @@
+.addproducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+.addproducts form{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin: 10px;
+}

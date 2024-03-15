@@ -1,13 +1,14 @@
 import '../styles/merchantsignup.css'
 import { useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Merchantsignup = () => {
     let [email, setemail] = useState("")
     let[password,setpassword]=useState("")
     let[name,setname]=useState("")
     let[phone,setphone]=useState("")
     let[gst_number,setgst_number]=useState("")
-    
+    let nav=useNavigate()
     const handleSubmit = (e) => {
         e.preventDefault();
         const saveMerchant = {
@@ -21,6 +22,7 @@ const Merchantsignup = () => {
             .then((response) => {
                 console.log(response);
                 alert("Merchant added successfully");
+                nav('/merchant')
             })
             .catch((error) => {
                 console.error(error);

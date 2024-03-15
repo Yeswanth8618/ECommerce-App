@@ -10,6 +10,9 @@ import Usersignup from './Components/Usersignup';
 import Merchanthome from './Components/Merchanthome';
 import Userhome from './Components/Userhome';
 import Error from './Components/Error';
+import Protect from './Components/Protect';
+import Protect2 from './Components/Protect2';
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,8 +23,8 @@ function App() {
       <Route path='/user' element={<Userlogin/>}/>
       <Route path='/merchantsignup' element={<Merchantsignup/>}/>
       <Route path='/usersignup' element={<Usersignup/>}/>
-      <Route path='/merchanthome/*' element={<Merchanthome/>}/>
-      <Route path='/userhome/*' element={<Userhome/>}/>
+      <Route path='/merchanthome/*' element={<Protect Child={Merchanthome}/>}/>
+      <Route path='/userhome/*' element={<Protect2 Child={Userhome}/>}/>
     </Routes>
     </BrowserRouter>
   );

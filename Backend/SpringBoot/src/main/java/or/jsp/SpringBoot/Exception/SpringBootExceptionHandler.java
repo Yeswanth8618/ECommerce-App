@@ -50,4 +50,12 @@ public ResponseEntity<ResponseStructure<String>> handleICE(IdNotFoundException e
 			structure.setStatusCode(HttpStatus.NOT_FOUND.value());
 			return new ResponseEntity<ResponseStructure<String>>(structure,HttpStatus.NOT_FOUND);
 		}
+	@ExceptionHandler(ProductNotFoundException.class)
+	public ResponseEntity<ResponseStructure<String>> handleICE(ProductNotFoundException exception){
+			ResponseStructure<String> structure=new ResponseStructure<>();
+			structure.setBody("Product not found");
+			structure.setMessage(exception.getMessage());
+			structure.setStatusCode(HttpStatus.NOT_FOUND.value());
+			return new ResponseEntity<ResponseStructure<String>>(structure,HttpStatus.NOT_FOUND);
+		}
 }

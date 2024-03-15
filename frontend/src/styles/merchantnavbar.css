@@ -17,7 +17,8 @@ nav{
     font-size: medium;
     font-weight: bolder;
     font-style: oblique;
-    margin-right: 750px;
+    /* margin-right: 750px; */
+    margin-right: 40px;
 }
 .option a:hover{
     border-bottom: 2px solid black;

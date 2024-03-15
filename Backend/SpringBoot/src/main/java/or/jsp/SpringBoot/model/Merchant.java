@@ -1,10 +1,13 @@
 package or.jsp.SpringBoot.model;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Entity
@@ -25,4 +28,6 @@ public class Merchant {
 	private String status;
 	@Column(unique = true)
 	private String token;
+	@OneToMany(mappedBy = "merchant")
+	private List<Product>product;
 }

@@ -1,0 +1,35 @@
+.updateuser form{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-top: 30px;
+    width: 33%;
+    height: 25%;
+    padding-left: 10px;
+    padding-right:5px ;
+    padding-bottom: 5px;
+    margin-left: 450px;
+    padding-top: 40px;
+    }
+    .updateuser form input{
+        margin-bottom: 25px;
+        outline: none;
+    }
+    .updateuser form label{
+        color: black;
+        font-size: medium;
+        font-weight: bolder;
+    }
+    #btn2{
+        margin-left: 90px;
+        color: black;
+    }
+    .updateuser h4{
+        padding-top: 20px;
+        margin-left: 570px;
+        color: black;
+        font-weight: bolder;
+        }
+        .updateuser{
+            background-color: rgb(215, 224, 221);
+            height: 92vh;
+        }

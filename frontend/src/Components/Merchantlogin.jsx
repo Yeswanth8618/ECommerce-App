@@ -1,7 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import '../styles/Merchantlogin.css'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 const Merchantlogin = () => {
@@ -14,7 +14,8 @@ const Merchantlogin = () => {
     e.preventDefault();
     axios.post(`http://localhost:8080/merchants/verify-by-email?email=${email}&password=${password}`)
     .then((res)=>{
-    console.log(res);
+    console.log(res.data.body);
+    localStorage.setItem("Merchant",JSON.stringify(res.data.body))
     alert("login successfull")
     navigate('/merchanthome')
     })

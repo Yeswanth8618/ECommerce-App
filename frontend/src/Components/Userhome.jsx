@@ -1,7 +1,13 @@
+import { Route,Routes } from "react-router-dom";
+import Usernavbar from "./Usernavbar";
+import Updateuser from "./Updateuser";
 const Userhome = () => {
     return ( 
         <div className="userhome">
-            <h1>user home</h1>
+            <Usernavbar/>
+            <Routes>
+            <Route path="/updateuser" element={<Updateuser/>}/>
+           </Routes>
         </div>
      );
 }

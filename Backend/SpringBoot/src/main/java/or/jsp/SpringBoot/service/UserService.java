@@ -12,12 +12,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import net.bytebuddy.utility.RandomString;
 import or.jsp.SpringBoot.Exception.IdNotFoundException;
 import or.jsp.SpringBoot.Exception.InvalidCredentialsException;
-import or.jsp.SpringBoot.Exception.MerchantNotFoundException;
 import or.jsp.SpringBoot.Exception.NullPointerException;
 import or.jsp.SpringBoot.Exception.UserNotFoundException;
 import or.jsp.SpringBoot.dao.UserDao;
 import or.jsp.SpringBoot.dto.ResponseStructure;
-import or.jsp.SpringBoot.model.Merchant;
 import or.jsp.SpringBoot.model.User;
 import or.jsp.SpringBoot.util.AccountStatus;
 
